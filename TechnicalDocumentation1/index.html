@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script> 
+    <title>Techcom Technical Documentation</title>   
+</head>
+<body>
+    <nav>
+        <header>
+            <h2>Techcom's Technical Documentation</h2>
+        </header>
+        <!--<input type="text" id="searchInput" placeholder="Search..." >-->
+        <ul>
+            <li><a href="#section1">Common Issues for CCTV and Biometrics</a></li><br>
+            <li><a href="#section2">Basic Troubleshooting Steps</a></li><br>
+            <li><a href="#section3">How to Install Smart PSS on Mac</a></li><br>
+            <li><a href="#section4">How to Reset and Connect a Wi-Fi Camera (IPC-A35) to DMSS</a></li><br>
+            <li><a href="#section5">Clear Attendance Logs and Fix Slow Loading in ZK Time</a></li><br>
+            <li><a href="#section6">FAQ</a></li><br>
+            <!--<li><a href="#section5">Free Section</a></li><br>-->
+            
+        </ul>
+    </nav>
+    <main>
+        <section id="section1">
+            <h2>Common Issues and Solutions for CCTV and Biometric Access</h2>
+
+    <h3>CCTV Issues and Solutions:</h3>
+
+    <h4>Issue 1: No Video Signal</h4>
+    <p>Possible Causes: Power issues, faulty cables, camera settings misconfiguration.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Check camera power source and connections.</li>
+        <li>Inspect cables for damage or disconnection.</li>
+        <li>Verify camera settings and IP configuration.</li>
+        <li>Make sure the camera settings (resolution, frame rate) are correctly configured.</li>
+    </ol>
+
+    <h4>Issue 2: Poor Video Quality</h4>
+    <p>Possible Causes: Low light conditions, incorrect camera settings.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Improve lighting conditions around the cameras.</li>
+        <li>Adjust camera settings for better image quality (brightness, contrast, exposure).</li>
+        <li>Clean the camera lens from any smudges or dirt.</li>
+    </ol>
+
+    <h4>Issue 3: Network Connection Problems</h4>
+    <p>Possible Causes: Network misconfiguration, IP conflicts, connectivity issues.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Verify IP settings and ensure no conflicts.</li>
+        <li>Check network connectivity and router configurations.</li>
+    </ol>
+
+    <h4>Issue 4: Recording Issues</h4>
+    <p>Possible Causes: Insufficient storage, recording settings misconfiguration.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Check available storage space on the recorder.</li>
+        <li>Confirm recording settings (schedule, motion detection).</li>
+        <li>Reboot the recorder to resolve any software glitches.</li>
+    </ol>
+
+    <h4>Issue 5: Remote Access Not Working</h4>
+    <p>Possible Causes: Network issues, port forwarding misconfiguration.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Ensure the recorder is connected to the network.</li>
+        <li>Verify port forwarding and uP2P settings on the router for remote access.</li>
+        <li>Make sure the mobile app settings match the recorder's settings.</li>
+    </ol>
+
+    <h4>Issue 6: Camera Offline</h4>
+    <p>Possible Causes: Network issues, camera power loss, IP address conflict.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Check camera power and network cable connections.</li>
+        <li>Ensure proper IP address settings and avoid IP conflicts.</li>
+        <li>Restart the camera and check network connectivity.</li>
+    </ol>
+
+    <h4>Issue 7: System Freezing or Crashing</h4>
+    <p>Possible Causes: Overloading the recorder, insufficient system resources.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Check if the recorder's resources (CPU, memory) are being maxed out.</li>
+        <li>Limit the number of users or streams accessing the recorder simultaneously.</li>
+    </ol>
+
+    <h4>Issue 8: Inaccurate Timestamps</h4>
+    <p>Possible Causes: Time settings misconfiguration, daylight saving issues.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Verify and adjust the time settings on both the camera and the recorder.</li>
+        <li>Account for daylight saving changes if applicable.</li>
+    </ol>
+
+    <h4>Issue 9: Alarm Triggering Unnecessarily</h4>
+    <p>Possible Causes: Incorrect motion detection settings, environmental factors.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Adjust motion detection sensitivity and area settings.</li>
+        <li>Consider environmental factors like moving trees or lights triggering false alarms.</li>
+    </ol>
+    <p><i>Remember that troubleshooting steps may vary based on specific models and configurations. If issues persist, consider consulting the manufacturer's documentation or seeking professional assistance.</i></p>
+
+    <h3>Biometric Access Issues and Solutions:</h3>
+
+    <h4>Issue 1: Access Denied</h4>
+    <p>Possible Causes: Incorrect credentials, database errors, reader malfunctions.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Double-check entered credentials (fingerprint, PIN, card).</li>
+        <li>Verify user database and ensure accurate information.</li>
+        <li>Inspect the biometric reader for malfunctions.</li>
+    </ol>
+
+    <h4>Issue 2: Slow Recognition</h4>
+    <p>Possible Causes: Dirty sensor, poor fingerprint enrollment, system overload.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Clean the biometric sensor to improve recognition accuracy.</li>
+        <li>Re-enroll fingerprints for affected users.</li>
+        <li>Check system resources for potential overload.</li>
+    </ol>
+
+    <h4>Issue 3: False Alarms</h4>
+    <p>Possible Causes: Environmental factors, sensor sensitivity settings.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Adjust sensor sensitivity to minimize false alarms.</li>
+        <li>Consider environmental conditions (lighting, temperature).</li>
+    </ol>
+
+    <h4>Issue 4: System Offline</h4>
+    <p>Possible Causes: Network issues, power outages, reader malfunction.</p>
+    <p>Solution:</p>
+    <ol>
+        <li>Check network connectivity of the biometric system.</li>
+        <li>Verify power supply and connections.</li>
+        <li>Inspect the reader for any signs of malfunction.</li>
+    </ol>
+
+    <p><strong>Step-by-Step Guide:</strong></p>
+    <ol>
+        <li><strong>Identify the Issue:</strong> Understand the nature of the problem and gather relevant information.</li>
+        <li><strong>Isolate the Cause:</strong> Determine the root cause by considering possible factors.</li>
+        <li><strong>Basic Checks:</strong> Verify power, connections, and settings of the affected devices.</li>
+        <li><strong>Restart Devices:</strong> Restart cameras, recorders, biometric readers, and network equipment.</li>
+        <li><strong>Check Configuration:</strong> Inspect camera, recorder, or biometric settings for any misconfiguration.</li>
+        <li><strong>Verify Network:</strong> Ensure network connectivity and stability for remote access.</li>
+        <li><strong>Cleaning:</strong> Clean camera lenses and biometric sensors if needed.</li>
+        <li><strong>Software Checks:</strong> Review recording schedules, user databases, and access settings.</li>
+        <li><strong>Update Firmware/Software:</strong> If applicable, update camera firmware or biometric software.</li>
+        <li><strong>Test:</strong> After adjustments, test the system to ensure the issue is resolved.</li>
+    </ol>
+
+    <p><em>Remember, specific troubleshooting steps may vary based on models and configurations. In complex cases, consult manufacturer documentation or seek professional assistance.</em></p>
+</body>
+        </section>
+        <section id="section2">
+            <br><h2>Basic Troubleshooting Steps</h2>
+
+            <p><strong>Step 1:</strong> If the issue seems related to hardware, kindly request a video or picture that shows the reported problem. This will help in understanding the situation better.</p>
+            <p><strong>Step 2:</strong> Inquire whether any recent changes were made to the device or network. Sometimes, recent modifications can lead to unexpected issues.</p>
+            <p><strong>Step 3:</strong> Ask what troubleshooting steps the customer has already taken. This will give you a clearer picture of what has been attempted.</p>
+            <p><strong>Step 4:</strong> Ensure that all connections are properly established. Check if both switches and the recorder show indicator lights (orange and green) as expected.</p>
+            <p><strong>Step 5:</strong> Recommend trying a simple reboot of the device if possible. Often, a simple restart can resolve minor issues.</p>
+
+            <br><h3>Biometric Device Issues</h3>
+            <p><strong>Step 6:</strong> Guide the customer to review the device settings. Look for things like duplicate punches and the device's ability to download and upload data.</p>
+            <p><strong>Step 7:</strong> Verify network settings such as IP Address, Gateway, and DNS Server. Correct network settings are crucial for device communication.</p>
+            <p><strong>Step 8:</strong> Perform a final check using the software. Ensure that communication is seamless, including the ability to download attendance logs and upload user data.</p>
+
+            <br><h3>Camera or Recorder Issues</h3>
+            <p><strong>Step 6:</strong> If the issue pertains to cameras or recorders, consider a remote session via AnyDesk or TeamViewer, based on the customer's preference.</p>
+            <p><strong>Step 7:</strong> For Dahua devices, suggest downloading Dahua ConfigTool to assess device statuses.</p>
+            <p><strong>Step 8:</strong> If not Dahua, recommend downloading an Advanced IP Scanner to scan the network for active devices.</p>
+            <p><strong>Step 9:</strong> Check the settings and configurations in the designated software for the devices. Incorrect settings can often be the root cause.</p>
+            <p><strong>Step 10:</strong> Access the web interface of the recorder with the reported issue by entering the recorder's IP Address in a web browser.</p>
+            <p><strong>Step 11:</strong> Note that some recorders might require you to install IE Tab to access the web interface properly.</p>
+            <p><strong>Step 12:</strong> Inspect the camera status or camera list settings within the recorder's interface.</p>
+            <p><strong>Step 13:</strong> Examine the playback of cameras that are experiencing issues and determine when the problem started.</p>
+            <p><strong>Step 14A:</strong> For Analog Cameras, after verifying the settings, consider issues related to power adapters or video baluns. On-site checks may be necessary.</p>
+            <p><strong>Step 14B:</strong> For IP Cameras, ensure the camera is visible in the network's "Add Devices" list.</p>
+            <p><strong>Step 15:</strong> If the camera is visible, double-check the serial number, delete the problematic entry, and add the camera with its new IP Address.</p>
+            <p><strong>Step 16:</strong> Re-encode and reconfigure the newly added camera for proper functionality.</p>
+            <p><strong>Step 17:</strong> If no new devices are detected, recommend an on-site visit. Issues might involve network cables or power adapters.</p>
+
+            <h3>Summary:</h3>
+            <p>By following these comprehensive steps, you'll be well-equipped to troubleshoot common issues with CCTV devices and Biometric Access systems. Remember, identifying and resolving problems often involve a systematic approach, checking settings, connections, and potential hardware problems. In case of continued difficulties, consider seeking professional assistance for thorough diagnosis and resolution.</p>
+        </section>
+        
+        <section id="section3">
+            <br><h2>How to Install Smart PSS on Mac</h2>
+            <p> 
+                <br><b>Step 1:</b> Check if your Mac has an Intel chip or an M1 Chip.<br>
+                <br><b>Step 2:</b> Download the correct installer if your MAC has M1 chip or an Intel chip choose the correct one from the <a href=”https://dahuawiki.com/SmartPSS”><i>dahuawiki website</i></a>.<br>
+                <br><b>Step 3:</b> Once it's installed, allow the app in your <i>"Security & Preferences settings"</i>.<br>
+                <br><b>Step 4:</b> Move the Smart PSS app from your <i>"Downloads"</i> folder to the <i>"Applications"</i> folder.<br>
+                <br><b>Step 5:</b> During setup, choose a password and security questions you prefer.<br>
+                <br><b>Step 6:</b> Once you're done with these steps, you'll find that Smart PSS lets you add your CCTV system for live viewing.<br>
+                <br><i>By following these simple steps, you'll have Smart PSS Lite up and running on your Mac. <u>Just remember to pick the right installer and allow the app in your Mac's security settings.</u></i>
+                </p>
+        </section>
+        <section id="section4">
+            <br><h2>How to Reset and Connect a Wi-Fi Camera to DMSS</h2>
+            <p> 
+                <br><b>Step 1:</b> Begin by finding the camera's reset button. Press and hold the reset button for a duration of 8 seconds or longer.<br>
+                <br><b>Step 2:</b> Watch for a change in the camera's indicator light. When it turns green, you're ready to proceed.<br>
+                <br><b>Step 3:</b> Open the DMSS app on your mobile device. From the main screen, tap on <i>"Devices."</i><br>
+                <br><b>Step 4:</b> Look for a <i>"+"</i> symbol located at the upper-right corner of the screen. Tap on it.<br>
+                <br><b>Step 5:</b> Use your camera's unique Serial Number (SN). You can find this SN in the QR code located at the bottom of the camera. Scan the QR code using your phone's camera.<br>
+                <br><b>Step 6:</b> You'll now be guided through the device setup process. Start by tapping on the <i>"..."</i> symbol, then select <i>"Switch to Wi-Fi Configuration."</i><br>
+                <br><b>Step 7:</b> Pick the Wi-Fi network you want the camera to connect to. You'll need to enter the Wi-Fi password as well.<br>
+                <br><b>Step 8:</b> Once you've entered the correct Wi-Fi details, watch for the indicator light on the camera. If it changes to blue, it means the camera has successfully connected to the Wi-Fi network.<br>
+                <br><b>Step 9:</b> Complete the setup process by configuring a new device password and giving your camera a name. This helps you identify it easily.<br>
+                <br><b>Step 10:</b> <i>Congratulations!</i> You're all set. You can now remotely view the camera's feed using the DMSS app.<br>
+                <br><i>By following these straightforward steps, you'll be able to connect your Wi-Fi camera to the DMSS app without any confusion. <u>Remember that it's important to carefully enter the Wi-Fi details and follow the prompts on the app for a successful setup</u>.</i>
+                </p>
+        </section>
+        <section id="section5">
+            <br><h2>Clear Attendance Logs and Fix Slow Loading in ZK Time</h2>
+            <h3>Clearing Attendance Logs:</h3>
+
+            <p><strong>Step 1:</strong> Access the administrative account of your ZK Time device. You can usually do this by pressing the "M/OK" button on the device.</p>
+            <p><strong>Step 2:</strong> Once in the device's menu, locate and select <i>"Data Management" or "Data Mgmt."</i></p>
+            <p><strong>Step 3:</strong> Within the Data Management menu, look for the option labeled <i>"Delete Attendance Data."</i> This is where you can clear the attendance logs.</p>
+            <p><strong>Step 4:</strong> After selecting <i>"Delete Attendance Data,"</i> you'll likely be presented with different deletion methods. Opt for <i>"Delete by Date Range."</i></p>
+            <p><strong>Step 5:</strong> Specify the specific date range you want to clear. For instance, you can choose a range like <i>"From January 1, 2022 to December 31, 2022."</i></p>
+            <p><strong>Step 6:</strong> If a confirmation box appears, click <i>"Yes"</i> to confirm the deletion. <i>Make sure not to click "Delete All"</i> as this will delete all the attendace record</p>
+
+            <h3>Fixing Slow Loading:</h3>
+
+            <p><strong>Step 7:</strong> Ensure that your ZK Time device's firmware is up to date. Sometimes, firmware updates can resolve performance issues.</p>
+            <p><strong>Step 8:</strong> Check the available storage space on your device. Insufficient storage can contribute to slow performance.</p>
+            <p><strong>Step 9:</strong> If applicable, restart the device. Sometimes, a simple reboot can resolve temporary slowdowns.</p>
+            <p><strong>Step 10:</strong> Check for any background processes or tasks that might be consuming resources. Close unnecessary apps or tasks.</p>
+            <p><strong>Step 11:</strong> Verify that your device is not overheating. Overheating can lead to performance degradation.</p>
+            <p><strong>Step 12:</strong> If you're using a network connection, ensure that it's stable, has the correct IP address, gateway, DNS Server and has sufficient bandwidth.</p>
+            <p><strong>Step 13:</strong> Consider clearing cache or temporary files on the device</p>
+
+            <p><i>By following these comprehensive steps, you can clear attendance logs and address slow loading issues in ZK Time. <b>Be sure to exercise caution while clearing data, as it cannot be undone.</b> Additionally, troubleshooting slow loading may require a combination of actions to achieve optimal performance.</i></p>
+
+        </section>
+        <section id="section6">
+            <br><h2>Frequently Asked Questions</h2>
+            <p><b>Question 1:</b> Does the user management have multiple levels? For example, can administrators edit settings while multiple users can open the door?</p>
+            <p><i>Answer: Yes, the system offers user management with distinct levels. Administrators can edit settings, and there's the ability for multiple users to open doors.</i></p>
+
+            <p><b>Question 2:</b> It's unclear from the online manual if this system can be set up and used remotely. Our users aren't in the office or connected to the office WiFi. Will they be able to remotely open the doors? This is limited to just opening the door and not changing any configurations.</p>
+            <p><i>Answer: Absolutely, this system can indeed be set up and used remotely. You'll just need to add the Serial Number (SN) of the device. If this pertains to Dahua products, users can use the DMSS software for remote door opening, without the capability to modify configurations.</i></p>
+
+            <p><b>Question 3:</b> Does the system support multiple users and log entries for tracking who opened the door and when?</p>
+            <p><i>Answer: Certainly, the system supports this functionality. You can review door access logs both through the device's web interface and the computer software. However, please note that the DMSS app does not display logs of door openings.</i></p>
+
+            <p><b>Question 4:</b> Is there an option to control remote door opening through a time schedule? For instance, only allowing access from 8 am to 8 pm on working days?</p>
+            <p><i>Answer: Yes, there is an option to set up time schedules for door locks. You can specify the times during which door access is permitted, providing flexible control.</i></p>
+
+            <p><b>Question 5:</b> Most importantly, can the DMSS application on a user's phone be downloaded and configured remotely?</p>
+            <p><i>Answer: Yes, users can download the DMSS app onto their phones. However, configuring door access cannot be done through the mobile app (DMSS). Door access setup is only feasible using SmartPSS Lite, the computer software.</i></p>
+                </section>  
+                <!--<section id="section5">
+            <br><h2>Free Title</h2>
+            <p> 
+                
+                </p>
+        </section>-->       
+    </main>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <script type="text/javascript" src="scripts.js"></script>
+</body>
+</html>
